@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de Registro</title>
+<link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+</head>
+<body>
+
+	<h1 class="titulo">Curso Serbatic</h1>
+
+	<h2 class="subtitulo">Formulario de registro</h2>
+
+	<form>
+		<fieldset>
+			<legend>DATOS PERSONALES</legend>
+			<div class="div25"><label for="name">Nombre</label></div>
+			<div class = "div75"><input type="text" name="name"/></div>
+			<br>
+			<div class="div25"><label for="ap1">Primer Apellido</label></div>
+			<div class="div75"><input type="text" name="ap1"/></div>
+			<br>
+			<div class="div25"><label for="ap2">Segundo Apellido</label></div>
+			<div class="div75"><input type="text" name="ap2"/></div>
+			<br>
+			<div class="div25"><label for="nacimiento">Fecha de nacimiento</label></div>
+			<div class="div25">
+				<select class="desplegableCompartido" name="dias" id="dias">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+			</div>
+
+			<div class="div25">
+				<select class="desplegableCompartido" name="mes" id="mes">
+					<option>Enero</option>
+					<option>Febrero</option>
+					<option>Marzo</option>
+					<option>Abril</option>
+					<option>Mayo</option>
+					<option>Junio</option>
+					<option>Julio</option>
+					<option>Agosto</option>
+					<option>Septiembre</option>
+					<option>Octubre</option>
+					<option>Noviembre</option>
+					<option>Diciembre</option>
+				</select>
+			</div>
+
+			<div class="div25">
+				<select class="desplegableCompartido" name="agno" id="agno">
+					<option>1990</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option>1994</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+				</select>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>DOMICILIO</legend>
+			<div class="div25"><label for="pais">País</label></div>
+			<div class = "div75">
+				<select class="desplegable" name="pais">
+					<option>Alemania</option>
+					<option>Austria</option>
+					<option>Belgica</option>
+					<option>Bulgaria</option>
+					<option>Chequia</option>
+					<option>Chipre</option>
+					<option>Croacia</option>
+					<option>Dinamarca</option>
+					<option>Eslovaquia</option>
+					<option>Eslovenia</option>
+					<option>Estonia</option>
+					<option>Finlandia</option>
+					<option>Francia</option>
+					<option>Grecia</option>
+					<option>Hungria</option>
+					<option>Irlanda</option>
+					<option>Italia</option>
+					<option>Letonia</option>
+					<option>Lituania</option>
+					<option>Luxemburgo</option>
+					<option>Malta</option>
+					<option>Paises Bajos</option>
+					<option>Polonia</option>
+					<option>Rumania</option>
+					<option>Suecia</option>
+					<option>Portugal</option>
+					<option>España</option>
+				</select>
+			</div>
+			<br>
+			<div class="div25"><label for="dir">Dirección</label></div>
+			<div class="div25"><input class="inputCompartido" type="text" name="dir"/></div>
+			<div class="div25"><label for="cPost">Codigo Postal</label></div>
+			<div class="div25"><input maxlength="5" class="inputCompartido" type="numeric" name="cPost" pattern="[0-9]{5}"/></div>
+
+			<br>
+			<div class="div25"><label for="localidad">Localidad</label></div>
+			<div class="div25"><input class="inputCompartido" type="text" name="localidad"/></div>
+			<div class="div25"><label for="provincia">Provincia</label></div>
+			<div class = "div25">
+				<select class="desplegableCompartido" name="Provincia">
+					<option>A coruña</option>
+					<option>Álava</option>
+					<option>Albacete</option>
+					<option>Alicante</option>
+					<option>Almeria</option>
+					<option>Asturias</option>
+					<option>Avila</option>
+					<option>Badajoz</option>
+					<option>Baleares</option>
+					<option>Barcelona</option>
+					<option>Burgos</option>
+					<option>Cáceres</option>
+					<option>Cádiz</option>
+					<option>Cantabria</option>
+					<option>Castellon</option>
+					<option>Ciudad Real</option>
+					<option>Córdoba</option>
+					<option>Cuenca</option>
+					<option>Girona</option>
+					<option>Granada</option>
+					<option>Guadalajara</option>
+					<option>Gipuzkoa</option>
+					<option>Huelva</option>
+					<option>Huesca</option>
+					<option>Jaén</option>
+					<option>La Rioja</option>
+					<option>Las Palmas</option>
+					<option>León</option>
+					<option>Lerida</option>
+					<option>Lugo</option>
+					<option>Madrid</option>
+					<option>Málaga</option>
+					<option>Murcia</option>
+					<option>Navarra</option>
+					<option>Ourense</option>
+					<option>Palencia</option>
+					<option>Pontevedra</option>
+					<option>Salamanca</option>
+					<option>Segovia</option>
+					<option>Sevilla</option>
+					<option>Soria</option>
+					<option>Tarragona</option>
+					<option>Santa Cruz de Tenerife</option>
+					<option>Teruel</option>
+					<option>Toledo</option>
+					<option>Valencia</option>
+					<option>Valladolid</option>
+					<option>Vizcaya</option>
+					<option>Zamora</option>
+					<option>Zaragoza</option>
+				</select>
+			</div>
+			<br>
+
+		</fieldset>
+		<fieldset>
+			<legend>DATOS DE CONTACTO</legend>
+			<div class="div25"><label for="tlfn">Teléfono</label></div>
+			<div class = "div75"><input maxlength="9" type="tel" name="tlfn"  pattern="[0-9]{9}"/></div>
+			<br>
+			<div class="div25"><label for="movil">Móvil</label></div>
+			<div class="div75"><input maxlength="9" type="tel" name="movil"  pattern="[0-9]{9}"/></div>
+			<br>
+			<div class="div25"><label for="mail">E-mail</label></div>
+			<div class="div75"><input type="email" name="mail"/></div>
+		</fieldset>
+		<div class="terminos">
+		<label for="terminos"><input type="checkbox" name="terminos"/>Acepto el acuerdo de servicios, la declaracion de privacidad y la declaración de uso de cookies</label>
+		</div>
+
+		<div class="botonera">
+			<input type="submit" name="btnRegistro" value="Registrar"/>
+			<input type="reset" name="btnLimpiar" value="Limpiar"/>
+		</div>	
+
+	</form>
+
+</body>
+</html>
