@@ -49,30 +49,43 @@ function validar(){
 	var cPost = document.getElementById("cPost").value;
 	var mail = document.getElementById("email").value;
 	var mensaje = "";
+
+	var correcto=true;
 		if(isChecked){
   			//alert('checkbox esta seleccionado');
 		}else{
 			mensaje = mensaje+"Acepta los terminos de uso \n";
+			correcto=false;
 		}
 
 
 		if(!validarTlfn(tlf)){
 			mensaje = mensaje+"Numero de telefono No valido \n";
+			correcto=false;
 		}
 
 		if(!validarTlfn(mov)){
 			mensaje = mensaje+"Numero de movil No valido \n";
+			correcto=false;
 		}
 
 		if(!validarCPost(cPost)){
 			mensaje = mensaje+"Codigo postal No valido \n";
+			correcto=false;
 		}
 
 		if(!validarEmail(mail)){
 			mensaje = mensaje+"E-mail no valido\n";
+			correcto=false;
 		}
 
-		alert(mensaje);
+		if(correcto){
+			return true;
+		}else{
+			alert(mensaje);
+			return false;
+		}
+		
 }
 
 function validarTlfn(num){

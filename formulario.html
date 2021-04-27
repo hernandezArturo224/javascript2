@@ -11,7 +11,7 @@
 
 	<h2 class="subtitulo">Formulario de registro</h2>
 
-	<form>
+	<form onsubmit="return validar();">
 		<fieldset>
 			<legend>DATOS PERSONALES</legend>
 			<div class="div25"><label for="name">Nombre</label></div>
@@ -228,7 +228,7 @@
 		</div>
 
 		<div class="botonera">
-			<input type="submit" name="btnRegistro" value="Registrar" onclick="validar()" />
+			<input type="submit" name="btnRegistro" value="Registrar" />
 			<input type="reset" name="btnLimpiar" value="Limpiar"/>
 		</div>	
 
