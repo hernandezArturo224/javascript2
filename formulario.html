@@ -149,7 +149,7 @@
 			<div class="div25"><label for="dir">Dirección</label></div>
 			<div class="div25"><input class="inputCompartido" type="text" name="dir"/></div>
 			<div class="div25"><label for="cPost">Codigo Postal</label></div>
-			<div class="div25"><input maxlength="5" class="inputCompartido" type="numeric" name="cPost" pattern="[0-9]{5}"/></div>
+			<div class="div25"><input maxlength="5" class="inputCompartido" type="numeric" name="cPost" id="cPost" pattern="[0-9]{5}"/></div>
 
 			<br>
 			<div class="div25"><label for="localidad">Localidad</label></div>
@@ -215,20 +215,20 @@
 		<fieldset>
 			<legend>DATOS DE CONTACTO</legend>
 			<div class="div25"><label for="tlfn">Teléfono</label></div>
-			<div class = "div75"><input maxlength="9" type="tel" name="tlfn"  pattern="[0-9]{9}"/></div>
+			<div class = "div75"><input maxlength="9" type="tel" name="tlfn" id="tlfn" pattern="[0-9]{9}"/></div>
 			<br>
 			<div class="div25"><label for="movil">Móvil</label></div>
-			<div class="div75"><input maxlength="9" type="tel" name="movil"  pattern="[0-9]{9}"/></div>
+			<div class="div75"><input maxlength="9" type="tel" name="movil" id="movil"  pattern="[0-9]{9}"/></div>
 			<br>
 			<div class="div25"><label for="mail">E-mail</label></div>
-			<div class="div75"><input type="email" name="mail"/></div>
+			<div class="div75"><input type="email" name="mail" id="email"/></div>
 		</fieldset>
 		<div class="terminos">
-		<label for="terminos"><input type="checkbox" name="terminos"/>Acepto el acuerdo de servicios, la declaracion de privacidad y la declaración de uso de cookies</label>
+		<label for="terminos"><input type="checkbox" id="terminos" name="terminos"/>Acepto el acuerdo de servicios, la declaracion de privacidad y la declaración de uso de cookies</label>
 		</div>
 
 		<div class="botonera">
-			<input type="submit" name="btnRegistro" value="Registrar"/>
+			<input type="submit" name="btnRegistro" value="Registrar" onclick="validar()" />
 			<input type="reset" name="btnLimpiar" value="Limpiar"/>
 		</div>	
 

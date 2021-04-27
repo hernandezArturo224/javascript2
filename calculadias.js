@@ -41,3 +41,73 @@ function calculaLetra(){
 	document.getElementById("letra").value = let;
 
 }
+
+function validar(){
+	var isChecked = document.getElementById("terminos").checked;
+	var tlf = document.getElementById("tlfn").value;
+	var mov = document.getElementById("movil").value;
+	var cPost = document.getElementById("cPost").value;
+	var mail = document.getElementById("email").value;
+	var mensaje = "";
+		if(isChecked){
+  			//alert('checkbox esta seleccionado');
+		}else{
+			mensaje = mensaje+"Acepta los terminos de uso \n";
+		}
+
+
+		if(!validarTlfn(tlf)){
+			mensaje = mensaje+"Numero de telefono No valido \n";
+		}
+
+		if(!validarTlfn(mov)){
+			mensaje = mensaje+"Numero de movil No valido \n";
+		}
+
+		if(!validarCPost(cPost)){
+			mensaje = mensaje+"Codigo postal No valido \n";
+		}
+
+		if(!validarEmail(mail)){
+			mensaje = mensaje+"E-mail no valido\n";
+		}
+
+		alert(mensaje);
+}
+
+function validarTlfn(num){
+	if(num.length < 9 || num.length > 9){
+		//alert("Numero no valido");
+		return false;
+	}
+
+	 if (isNaN(parseInt(num))) {
+        //alert('No es un numero valido');
+        return false;
+     }  
+
+     return true;
+}
+
+function validarCPost(num){
+	if(num.length < 5 || num.length > 5){
+		//alert("Numero no valido");
+		return false;
+	}
+
+	 if (isNaN(parseInt(num))) {
+        //alert('No es un numero valido');
+        return false;
+     }  
+
+     return true;
+}
+
+function validarEmail(mail){
+	re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+	if(!re.exec(mail)){
+		return false;
+	}else{
+		return true;
+	} 
+}
