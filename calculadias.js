@@ -30,3 +30,14 @@ function esBisiesto(agno){
 	}
 
 }
+
+function calculaLetra(){
+	var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+
+	var dni = document.getElementById("dni").value;
+	var posicion = dni%23;
+	var let = letras[posicion];
+
+	document.getElementById("letra").value = let;
+
+}

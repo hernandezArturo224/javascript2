@@ -15,7 +15,11 @@
 		<fieldset>
 			<legend>DATOS PERSONALES</legend>
 			<div class="div25"><label for="name">Nombre</label></div>
-			<div class = "div75"><input type="text" name="name"/></div>
+			<div class="div15"><input type="text" name="name"/></div>
+			<div class="div15"><label for="dni">DNI</label></div>
+			<div class="div15"><input maxlength="8" type="numeric" name="dni" id="dni" pattern="[0-9]{8}" onchange="calculaLetra()" /></div>
+			<div class="div15"><label for="letra">Letra</label></div>
+			<div class="div15"><input style="width: 15%;" type="numeric" name="letra" id="letra" readonly="true" /></div>
 			<br>
 			<div class="div25"><label for="ap1">Primer Apellido</label></div>
 			<div class="div75"><input type="text" name="ap1"/></div>
